@@ -1,0 +1,11 @@
+
+<% include ../header %>
+<h1>Welcome!</h1>
+<h4>Select transaction</h4>
+<ul>
+  <% for (var i=0; i<posts.length; i++) { %>
+  <li><a href="/posts/<%= i %>"><%= posts[i].title %></li></a>
+  <%  } %>
+
+</ul>
+<% include ../footer %>
