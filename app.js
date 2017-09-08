@@ -7,10 +7,8 @@ var bodyParser = require('body-parser');
 // Cookies in express are handled by the modele 'cookie-parser'
 var cookieParser = require('cookie-parser');
 app.use(cookieParser());
-res.cookie(name, 'value', {maxAge: 36000}); //maxAge sets the time limit of the cookie upon creation
-res.clearcookie('name'); // will delete the cookie
 
-// 
+
 post = require('./routes/post');
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
